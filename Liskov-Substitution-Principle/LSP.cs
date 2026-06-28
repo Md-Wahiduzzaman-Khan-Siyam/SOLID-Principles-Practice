@@ -10,12 +10,12 @@ class LSP
         void Eat();
     }
 
-    public interface IFlyable : IBird
+    public interface IFlyable
     {
         void Fly();
     }
 
-    public interface ISwimmable : IBird
+    public interface ISwimmable
     {
         void Swim();
     }
@@ -52,8 +52,8 @@ class LSP
         {
             IBird parrot = new Parrot();
             parrot.Eat();
-            Penguin penguin = new Penguin();
-            penguin.Swim();
+            IBird Penguin = new Penguin();
+            penguin.Eat();
         }
     }    
 }
